@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cryptonite</h1>
+        <nav class="header-nav">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a id="homeLink" class="nav-link active" data-section="homeSection">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="reportsLink" class="nav-link" data-section="reportsSection">Live Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a id="aboutLink" class="nav-link" data-section="aboutSection">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="parallax topParallax"></div>
+        <div id="main-div">
+            <section id="homeSection">
+                <h2>Currencies</h2>
+                <form id="searchForm" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" name="searchInput" class="form-control" placeholder="Enter Currency Symbol">
+                        <div class="input-group-append">
+                            <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+                            <button type="button" id="allBtn" class="btn btn-secondary">Clear Search</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="coinsContainer">
+
+                </div>
+            </section>
+
+            <section id="reportsSection">
+            </section>
+
+            <section id="aboutSection">
+            </section>
+        </div>
+        <div class="parallax bottomParallax"></div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a id="homeLinkFooter" class="footer-nav-link" data-section="homeSection">Home</a>
+                </li>
+                <span>|</span>
+                <li class="nav-item">
+                    <a id="reportsLinkFooter" class="footer-nav-link" data-section="reportsSection">Live Reports</a>
+                </li>
+                <span>|</span>
+                <li class="nav-item">
+                    <a id="aboutLinkFooter" class="footer-nav-link" data-section="aboutSection">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div>All rights reserved &copy; 2024</div>
+    </footer>
+</body>
+
+</html>
